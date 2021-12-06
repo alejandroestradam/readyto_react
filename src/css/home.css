@@ -21,6 +21,10 @@
   align-content: center;
   border-radius: 50px;
 }
+.btn-explore:hover {
+  transform: translateY(-5%);
+  cursor: pointer;
+}
 .btn-explore a {
   color: white;
   font-weight: 500;
@@ -30,13 +34,17 @@
 }
 /*  Grid   */
 #properties {
-  margin-top: 10vh;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #properties h1 {
   color: black;
   text-align: center;
 }
-.properties {
+.propert {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -49,10 +57,34 @@
   margin: 0;
 }
 .card img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 .card p {
   color: black;
 }
+.link-image {
+  width: 300px;
+  height: 300px;
+}
+/*.houses{
+  background-image: url("/img/house.jpg");
+}
+.apartments{
+  background-image: url("/img/apartment.jpg");
+}
+.rooms{
+  background-image: url("/img/private-room.jpg");
+}
+.unique{
+  background-image: url("/img/unique-stay.jpg");
+}
+
+.backimg{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}*/

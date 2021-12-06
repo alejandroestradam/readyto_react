@@ -50,6 +50,7 @@
   border: none;
   border-radius: 10px;
   padding: 0;
+  text-align: center;
 }
 #search-btn {
   width: 10%;
@@ -59,6 +60,11 @@
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
+}
+#search-btn:hover {
+  transform: translateY(-5%);
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 .link {
   width: 40px;
@@ -71,48 +77,6 @@
   width: 20px;
   height: 20px;
 }
-/*
-.dropdown {
-    position: relative;
-    color: black;
-}
-.dropdown-menu {
-  position: absolute;
-  width: 150px;
-  left: -5rem;
-  top: calc(100% + 0.25rem);
-  background-color: white;
-  padding: 0.75rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-10px);
-  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-  display: flex;
-  flex-direction: column;
-}
-.dropdown-menu a {
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-}
-.dropdown-menu a:hover {
-  background-color: #dcdcdc;
-}
-.dropdown > .link:focus + .dropdown-menu {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-.loginFalse {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px;
-  width: 70px;
-}
-*/
 .loginFalse {
   display: flex;
   align-items: center;

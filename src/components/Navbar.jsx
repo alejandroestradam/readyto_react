@@ -28,13 +28,6 @@ const Navbar = (props) => {
             : 
             <div class="loginFalse">
                 <div class="drop">
-                    {/*<button class="link">
-                        <img src="https://img.icons8.com/material-outlined/96/000000/menu--v1.png" alt="link"/>
-                    </button>
-                    <div class="dropdown-menu">
-                        <NavLink to="/signin">Sign in</NavLink>
-                        <NavLink to="/login">Log in</NavLink>
-                    </div>*/}
                 <NavLink to="/signin" className="links" style={{display: props.signin}}>Sign in</NavLink>
                 <NavLink to="/login" className="links" style={{display: props.login}}>Log in</NavLink>
                 </div>

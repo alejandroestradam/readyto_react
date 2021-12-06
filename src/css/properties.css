@@ -9,11 +9,12 @@ Filters {
 
 /*     Properties     */
 .properties {
-  margin-top: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .grid-properties {
   display: grid;
@@ -57,7 +58,7 @@ Filters {
   width: 100%;
 }
 .Filters {
-  width: 60%;
+  width: 70%;
   margin: auto;
   margin-top: 50px;
   display: flex;
@@ -66,11 +67,11 @@ Filters {
 }
 .filter {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   width: 150px;
-  height: 100px;
+  height: 150px;
 }
 .filter-btn {
   display: flex;
@@ -87,14 +88,30 @@ Filters {
 .dropdown-menu {
   position: relative;
   top: 10px;
-  left: 60px;
+  left: 66px;
   width: 150px;
+  height: 100px;
   transform: translateX(-45%);
-  background-color: #d3d3d3;
-  border: none;
+  background-color: white;
   border-radius: 10px;
+  border: 0.1rem solid #dcdcdc;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 150ms ease-in-out;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.options {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options:hover {
+  background-color: #dcdcdc;
 }

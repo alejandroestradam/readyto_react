@@ -13,41 +13,17 @@ const Properties = () => {
         <div className="properties-section">
         <section class="Filters">
             <Filter text="Price"> 
-            <Dropdown options={['option 1', 'option 2', 'option 3', 'option 4']}/>
+            <Dropdown options={['$0 - $100', '$100 - $500', '$500 - $1000', ' > $1000']}/>
             </Filter>
             <Filter text="Property type"> 
+            <Dropdown options={['Houses', 'Apartments', 'Private Room', 'Unique Stays']}/>
             </Filter>
             <Filter text="Rooms"> 
+            <Dropdown options={['1 room', '2 rooms', '3 rooms', '> 3 rooms']}/>
             </Filter>
             <Filter text="Bathroms"> 
+            <Dropdown options={['1 bathroom', '2 bahtrooms', '3 bathrooms', '> 3 bathrooms']}/>
             </Filter>
-            {/*<div class="dropdown">
-                <button class="dropdown-btn">Precio</button>
-                <div class="dropdown-filters">
-                    <input type="text"/> - <input type="text"/>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropdown-btn">Tipo de propiedad</button>
-                <div class="dropdown-filters filters-list">
-                    <a href="/">Casas</a>
-                    <a href="/">Departamentos</a>
-                    <a href="/">Cuartos privados</a>
-                    <a href="/">Estancias Únicas</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropdown-btn">No. de Cuartos</button>
-                <div class="dropdown-filters">
-                    <input type="text"/> - <input type="text"/>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropdown-btn">No. de baños</button>
-                <div class="dropdown-filters">
-                    <input type="text"/> - <input type="text"/>
-                </div>
-    </div>*/}
         </section>
         <PropertiesGrid />
         </div>
