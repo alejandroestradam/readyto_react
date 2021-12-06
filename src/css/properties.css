@@ -1,0 +1,100 @@
+/* Filters */
+Filters {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*     Properties     */
+.properties {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid-properties {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 50px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.card {
+  width: 20vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.card h1 {
+  font-size: 100%;
+}
+.card p {
+  margin: 0;
+  font-size: 13px;
+}
+.card img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.text {
+  height: 20%;
+  width: 100%;
+}
+.Filters {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+}
+.filter-btn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 0.1rem solid #dcdcdc;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+.dropdown-menu {
+  position: relative;
+  top: 10px;
+  left: 60px;
+  width: 150px;
+  transform: translateX(-45%);
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

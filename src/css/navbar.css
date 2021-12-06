@@ -1,0 +1,153 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.imglogo {
+  background-image: url("https://img.icons8.com/external-becris-solid-becris/64/000000/external-travel-coronavirus-becris-solid-becris.png");
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.logo h1 {
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+#search {
+  width: 60%;
+}
+#login {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+.search {
+  width: 300px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+.input {
+  width: 90%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+#search-btn {
+  width: 10%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url("https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-search-interface-kiranshastry-lineal-kiranshastry.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+}
+.link {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+.link img {
+  width: 20px;
+  height: 20px;
+}
+/*
+.dropdown {
+    position: relative;
+    color: black;
+}
+.dropdown-menu {
+  position: absolute;
+  width: 150px;
+  left: -5rem;
+  top: calc(100% + 0.25rem);
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-menu a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+.dropdown-menu a:hover {
+  background-color: #dcdcdc;
+}
+.dropdown > .link:focus + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.loginFalse {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 70px;
+}
+*/
+.loginFalse {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: 200px;
+}
+.loginTrue {
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  height: 40px;
+  width: 250px;
+  justify-content: space-around;
+}
+.loginTrue p {
+  color: white;
+  font-weight: 700;
+}
+.drop {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  background-color: transparent;
+}
+.user {
+  background-color: white;
+  border-radius: 10px;
+}
+.links {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.links:hover {
+  color: #d3d3d3;
+}
