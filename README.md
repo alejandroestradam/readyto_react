@@ -1,6 +1,13 @@
 <h1 align="center">ReadyTo</h1>
 
 <div align="center">
-   Application that through Frontend made with React <span>, allows the user to create an account, and log in, in addition to being able to view, search, and upload properties that are rented per day. This is achieved through Nodejs, which manages the requests to the database in MongoDB, to update and display data from it through the Get, Post, and Put methods.
+   Application created with React, using components, hooks, react router dom, axios, and CSS. This app allows the user to view, search, and upload properties that are rented per day. This is achieved through requests to a simulated databased using json files, that update and display data from it through the Get, Post, and Put methods.
+</div>
+<div align="center">
+  <h3>
+    <a href="https://tic-tac-toe-project1.netlify.app">
+      Demo
+    </a>
+  </h3>
 </div>
 
