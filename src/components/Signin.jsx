@@ -1,8 +1,9 @@
 import React from 'react';
 import '../css/signin.css';
-import axios from 'axios';
+//import axios from 'axios';
 
 const Signin = (props) => {
+    // eslint-disable-next-line no-unused-vars
     const [isError, setisError] = React.useState({
         name: '',
         surname:'',
@@ -20,11 +21,12 @@ const Signin = (props) => {
         userId: 1
     });
 
-    const handleSubmit = (event) => {
+    /*const handleSubmit = (event) => {
         event.preventDefault();
         const campos = {
             ...formValues.body
         }
+        // eslint-disable-next-line array-callback-return
         Object.keys(campos).map((campo) =>{
             if(!campos[campo]) {
                 console.log({...isError, [campo]: true});
@@ -40,7 +42,7 @@ const Signin = (props) => {
           .catch(function (error) {
             console.log(error);
           });
-    }
+    }*/
     const handleChange = (event) => {
         const {name, value} = event.target;
         setformValues({...formValues, body: {...formValues.body,[name]: value}});
@@ -49,7 +51,7 @@ const Signin = (props) => {
     <div className="fullpage">
     <section class="register flex-center">
         <h1>Create an account</h1>
-        <form action="" method="" class="flex-center" onSubmit={handleSubmit}>
+        <form action="" method="" class="flex-center" >
         <div class="email">
             <p>Name</p>
             <input type="text" name="name" value={formValues.name} onChange={handleChange}/>

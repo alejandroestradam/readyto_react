@@ -2,7 +2,6 @@ import React from 'react';
 import '../../css/home.css';
 import { NavLink } from 'react-router-dom';
 import Grid from './Grid';
-import Navbar from '../Navbar';
 
 const Home = () => {
     return (

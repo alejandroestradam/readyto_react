@@ -9,7 +9,6 @@ import { filterPrice, filterProperty, filterRooms, filterBathrooms } from '../he
 const Properties = () => {
     const [post, setPost] = React.useState([]);
     const [searchTerm, setSearchTerm] = React.useState("");
-    const [searchResults, setSearchResults] = React.useState([]);
 
     const handleChange = event => {
         setSearchTerm(event.target.value);
@@ -25,6 +24,7 @@ const Properties = () => {
         } else{
             setPost(results);
         }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [searchTerm]);
 
     const handleOption = (indexValue, filterType) =>{
