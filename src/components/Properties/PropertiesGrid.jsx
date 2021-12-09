@@ -1,19 +1,14 @@
 import React from 'react';
-import axios from 'axios';
 import '../../css/properties.css'
 
-const PropertiesGrid = () => {
-    const [post,setPost]=React.useState([]);
+const PropertiesGrid = (props) => {
+    const {post} = props;
+    const {handleOption} = props;
 
-    React.useEffect(() => {
-        axios.get("./json/properties.json")
-        .then(res=>{
-            setPost(res.data.properties);
-            console.log(res.data.properties);
-        }).catch(err =>{
-            console.log(err);
-        })
+    React.useEffect(() =>{
+        handleOption();
     }, []);
+
     return (
         <section class="properties flex-center">
             <h1>Descubre los más de 300 alojamientos</h1>

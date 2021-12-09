@@ -1,29 +1,75 @@
 import React from 'react';
-import '../css/signin.css'
-import Navbar from './Navbar';
-const Signin = () => {
+import '../css/signin.css';
+import axios from 'axios';
+
+const Signin = (props) => {
+    const [isError, setisError] = React.useState({
+        name: '',
+        surname:'',
+        email:'',
+        password:'',
+        auxpassword:''
+    })
+    const [formValues, setformValues] = React.useState({
+        body: {
+            name:'',
+            surname:'',
+            email:'',
+            password:'',
+            auxpassword:''},
+        userId: 1
+    });
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const campos = {
+            ...formValues.body
+        }
+        Object.keys(campos).map((campo) =>{
+            if(!campos[campo]) {
+                console.log({...isError, [campo]: true});
+                setisError(prevError => ({...prevError, [campo]: true}));
+                console.log(isError);
+            }
+        });
+        axios.post('https://jsonplaceholder.typicode.com/posts', {
+            formValues
+          })
+          .then(function (response) {
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    }
+    const handleChange = (event) => {
+        const {name, value} = event.target;
+        setformValues({...formValues, body: {...formValues.body,[name]: value}});
+    }
     return (
     <div className="fullpage">
-        <Navbar isloggedIn={false} user="Alejandro"
-        display="none" signin="none" background="#01a6e6"/>
     <section class="register flex-center">
         <h1>Create an account</h1>
-        <form action="/src/views/register.ejs" method="POST" class="flex-center">
+        <form action="" method="" class="flex-center" onSubmit={handleSubmit}>
         <div class="email">
-            <p>Name and surname</p>
-            <input type="text" name="username"/>
+            <p>Name</p>
+            <input type="text" name="name" value={formValues.name} onChange={handleChange}/>
+            {isError.name && "error"}
+        </div>
+        <div class="email">
+            <p>Surname</p>
+            <input type="text" name="surname" value={formValues.surname} onChange={handleChange}/>
         </div>
         <div class="email">
           <p>Email</p>
-          <input type="text" name="email"/>
+          <input type="text" name="email" value={formValues.email} onChange={handleChange}/>
       </div>
       <div class="email">
           <p>Password</p>
-          <input type="text" name="password"/>
+          <input type="text" name="password" value={formValues.password} onChange={handleChange}/>
       </div>
       <div class="email">
           <p>Confirm password</p>
-          <input type="text" name="confirm_password"/>
+          <input type="text" name="auxpassword" value={formValues.auxpassword} onChange={handleChange}/>
       </div>
         <button class="btn">Sign up</button>
       </form>

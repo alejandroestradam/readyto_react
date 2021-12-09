@@ -1,10 +1,48 @@
 /* Filters */
-Filters {
+.filters {
   width: 60%;
-  margin: auto;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+}
+
+/*  Search bar */
+#search {
+  width: 100%;
+  margin-top: 50px;
+}
+.search {
+  width: 300px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  border: 0.1rem solid #dcdcdc;
+}
+.input {
+  width: 30%;
+  height: 30px;
+  border: 0.1rem solid #dcdcdc;
+  border-radius: 10px;
+  padding: 0;
+  text-align: center;
+}
+#search-btn {
+  width: 10%;
+  height: 30px;
+  background-color: transparent;
+  background-image: url("https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-search-interface-kiranshastry-lineal-kiranshastry.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+}
+#search-btn:hover {
+  transform: translateY(-5%);
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 /*     Properties     */
