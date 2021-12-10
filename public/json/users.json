@@ -6,14 +6,19 @@
             "password": "alex1"
         },
         {
-            "name": "Alejandro",
-            "email": "alejandro@gmail.com",
+            "name": "Alex",
+            "email": "inbi.alejandro@gmail.com",
             "password": "alex1"
         },
         {
-            "name": "Alejandro",
-            "email": "alejandro@gmail.com",
-            "password": "alex1"
+            "name": "Pedro",
+            "email": "pedro@gmail.com",
+            "password": "pedro1"
+        },
+        {
+            "name": "Flor",
+            "email": "flor@gmail.com",
+            "password": "flor1"
         }
     ]
 }

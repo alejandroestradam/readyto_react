@@ -1,7 +1,50 @@
 import React from 'react';
 import '../css/login.css';
+import axios from 'axios';
 
-const Login = () => {
+const Login = (props) => {
+    const [Values, setValues] = React.useState({
+            email:'',
+            password:''
+    });
+    const [loginValues, setloginValues] = React.useState({
+        name: '',
+        email:'',
+        password:''
+    })
+    const [isLoggedIn, setisLoggedIn] = React.useState({
+        status: false,
+        name: ''
+    });
+
+    const handleChange = (event) => {
+        setValues({
+            ...Values,
+            [event.target.name] : event.target.value
+        })
+    }
+    const newLogin = () =>{
+        const results = loginValues.filter((user) =>{
+            return user.email === Values.email && user.password === Values.password;
+        });
+        if(results.length > 0){
+            setisLoggedIn({
+                status: true,
+                name: results[0].name
+            });
+            props.parentCallback(isLoggedIn);
+        }
+    }
+
+    React.useEffect(() => {
+        axios.get("./json/users.json")
+        .then(res=>{
+            setloginValues(res.data.users);
+        }).catch(err =>{
+            console.log(err);
+        });
+    }, []);
+
     return (
     <div className="fullpage">
     <section class="register flex-center">
@@ -9,14 +52,14 @@ const Login = () => {
         <form action="" method="GET">
             <figure class="email">
                 <p>E-mail</p>
-                <input type="text"/>
+                <input type="text" name="email" value={Values.email} onChange={handleChange}/>
             </figure>
             <figure class="email">
                 <p>Password</p>
-                <input type="text"/>
+                <input type="text" name="password" value={Values.password} onChange={handleChange}/>
             </figure>
         </form>
-        <button class="btn">Log in</button>
+        <button class="btn" onClick={newLogin}>Log in</button>
         <div class="terms flex-center">
             <p>By logging in or creating an account, you agree to our Terms and
                  Terms and Privacy Policy

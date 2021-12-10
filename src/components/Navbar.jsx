@@ -6,11 +6,14 @@ import { propsPath } from './helpers/constants';
 
 
 const Navbar = (props) => {
-    const isLoggedIn = false;
-    const username = props.user;
+    //const isLoggedIn = props.isLoggedIn.childData;
+    const [isLoggedIn, setisLoggedIn] = React.useState({});
     const [caseProps, setcaseProps] = React.useState('');
     let path = props.location.pathname;
 
+    const logOut = () =>{
+        setisLoggedIn(false);
+    }
     React.useEffect(() =>{
         switch (path) {
             case '/':
@@ -35,6 +38,11 @@ const Navbar = (props) => {
        
     }, [path]);
 
+    React.useEffect(() =>{
+        console.log(props.isLoggedIn);
+        setisLoggedIn(props.isLoggedIn);
+    },[props.isLoggedIn]);
+
     return (
         <nav className="navbar" style={{backgroundColor: caseProps.background}}>
         <div class="logo">
@@ -42,10 +50,11 @@ const Navbar = (props) => {
             <h1>ReadyTo</h1>
         </div>
         <div id="login">
-            {isLoggedIn 
+            {isLoggedIn.status
             ?
             <div className="loginTrue">
-                <p>Welcome back {username}!</p>
+                <button className="btn-logout" onClick={logOut}>Log out</button>
+                <p>Welcome back {isLoggedIn.name}!</p>
                 <img className="user" src="https://img.icons8.com/fluency-systems-regular/96/000000/user.png" width="30px" height="30px" alt="link"/>
             </div>
             : 

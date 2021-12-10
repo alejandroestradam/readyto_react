@@ -9,9 +9,16 @@ import Property from './Property';
 import Signin from './Signin';
 
 const App = () => {
+  const [isLoggedIn, setisLoggedIn] = React.useState(false);
+
+  const callbackFunction = (childData) => {
+    console.log('data: ', childData);
+    setisLoggedIn(childData);
+  }
+
   return (
     <Router>
-      <Navbar />
+      <Navbar isLoggedIn={isLoggedIn}/>
           <Switch>
             <Route path ="/property">
               <Property />
@@ -23,7 +30,7 @@ const App = () => {
               <Properties />
             </Route>
             <Route path ="/login">
-              <Login />
+              <Login parentCallback={callbackFunction}/>
             </Route>
             <Route path ="/signin">
               <Signin />
