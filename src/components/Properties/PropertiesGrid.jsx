@@ -29,7 +29,7 @@ const PropertiesGrid = (props) => {
 
     return (
         <section class="properties flex-center">
-            <h1>Descubre los más de 300 alojamientos</h1>
+            <h1>Discover places to stay around the world</h1>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
