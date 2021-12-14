@@ -5,13 +5,11 @@ import PropertiesGrid from './PropertiesGrid';
 import { filterText, optionsText } from '../helpers/constants';
 import axios from 'axios';
 import { filterPrice, filterProperty, filterRooms, filterBathrooms } from '../helpers/Filters';
-import { useHistory } from "react-router-dom";
 
 const Properties = (props) => {
     const [post, setPost] = React.useState([]);
     const [searchTerm, setSearchTerm] = React.useState("");
     const [selectedProperty, setselectedProperty] = React.useState({});
-    let history = useHistory();
 
      const callbackFunction = (childData) => {
         setselectedProperty(childData);

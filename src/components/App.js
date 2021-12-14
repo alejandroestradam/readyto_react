@@ -13,16 +13,11 @@ const App = () => {
     name: '',
     token: ''
 });
-const [selectedProperty, setselectedProperty] = React.useState({
-
-});
 
   const callbackFunction = (childData) => {
     setisLoggedIn(childData);
   }
-  const callback = (Data) => {
-    setselectedProperty(Data);
-  }
+
 
   return (
     <Router>
@@ -32,7 +27,7 @@ const [selectedProperty, setselectedProperty] = React.useState({
               <AddProperty />
             </Route>
             <Route path ="/properties">
-              <Properties parentCallback={callback} isLoggedIn={isLoggedIn}/>
+              <Properties isLoggedIn={isLoggedIn}/>
             </Route>
             <Route path ="/login">
               <Login parentCallback={callbackFunction}/>
