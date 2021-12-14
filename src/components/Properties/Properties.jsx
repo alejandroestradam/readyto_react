@@ -9,19 +9,10 @@ import { filterPrice, filterProperty, filterRooms, filterBathrooms } from '../he
 const Properties = (props) => {
     const [post, setPost] = React.useState([]);
     const [searchTerm, setSearchTerm] = React.useState("");
-    const [selectedProperty, setselectedProperty] = React.useState({});
-
-     const callbackFunction = (childData) => {
-        setselectedProperty(childData);
-    }
 
     const handleChange = event => {
         setSearchTerm(event.target.value);
       };
-
-      React.useEffect(() => {
-        props.parentCallback(selectedProperty);
-      },[props, selectedProperty])
 
       React.useEffect(() => {
         const results = post.filter(property =>
@@ -74,7 +65,7 @@ const Properties = (props) => {
             <GeneralFilter text={filterText.rooms} options={optionsText.rooms} handleOption = {handleOption} filterType="propertyRooms"/>
             <GeneralFilter text={filterText.bathrooms} options={optionsText.bathrooms} handleOption = {handleOption} filterType="propertyBaths"/>
         </section>
-        <PropertiesGrid handleOption={handleOption} post={post} parentCallback={callbackFunction} isLoggedIn={props.isLoggedIn}/>
+        <PropertiesGrid handleOption={handleOption} post={post}  isLoggedIn={props.isLoggedIn}/>
         </div>
     </div>
     )

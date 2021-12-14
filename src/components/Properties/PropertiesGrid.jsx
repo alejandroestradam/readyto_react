@@ -26,11 +26,6 @@ const PropertiesGrid = (props) => {
         setIsOpen(true);
         
     }
-    
-
-    React.useEffect(() =>{
-        props.parentCallback(selectedProperty);
-    }, [props, selectedProperty]);
 
     return (
         <section class="properties flex-center">
