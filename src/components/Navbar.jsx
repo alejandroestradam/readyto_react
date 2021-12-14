@@ -60,7 +60,7 @@ const Navbar = (props) => {
             : 
             <div class="loginFalse">
                 <div class="drop">
-                <NavLink to="/signin" className="links" style={{display: caseProps.signin}}>Sign in</NavLink>
+                <NavLink to="/signin" className="links" style={{display: caseProps.signin}}>Sign up</NavLink>
                 <NavLink to="/login" className="links" style={{display: caseProps.login}}>Log in</NavLink>
                 </div>
                 <img className="user" src="https://img.icons8.com/fluency-systems-regular/96/000000/user.png" width="30px" height="30px" alt="link"/>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 import '../../css/properties.css'
 
 const PropertiesGrid = (props) => {
@@ -16,7 +17,9 @@ const PropertiesGrid = (props) => {
             <div class="grid-properties" id="grid-properties">
                 {post.map((obj,index) => {
                     return (<figure class="card">
-                                <img src={post[index].images.picture_url} alt=""/>
+                                <NavLink to="/properties/property" className="property-image">
+                                    <img src={post[index].images.picture_url} alt=""/>
+                                </NavLink>
                                 <div class="text">
                                     <h1>{post[index].name}</h1>
                                     <div class="info">

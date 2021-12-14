@@ -1,8 +1,21 @@
 import React from 'react';
 import '../css/login.css';
 import axios from 'axios';
+import GoogleLogin from 'react-google-login';
 
 const Login = (props) => {
+
+
+    const responseGoogle = (response) => {
+        if (response){
+        setisLoggedIn({
+            status: true,
+            name: response.Au.VX
+        });
+    }
+        props.parentCallback(isLoggedIn);
+    }
+
     const [Values, setValues] = React.useState({
             email:'',
             password:''
@@ -60,6 +73,13 @@ const Login = (props) => {
             </figure>
         </form>
         <button class="btn" onClick={newLogin}>Log in</button>
+        <GoogleLogin
+            clientId="622905974873-2b7vpeoj4aifmcjuvorka6uir3b5ia4f.apps.googleusercontent.com"
+            buttonText="Login"
+            onSuccess={responseGoogle}
+            onFailure={responseGoogle}
+            cookiePolicy={'single_host_origin'}
+        />
         <div class="terms flex-center">
             <p>By logging in or creating an account, you agree to our Terms and
                  Terms and Privacy Policy

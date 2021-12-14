@@ -20,7 +20,7 @@ const App = () => {
     <Router>
       <Navbar isLoggedIn={isLoggedIn}/>
           <Switch>
-            <Route path ="/property">
+            <Route path ="/properties/property">
               <Property />
             </Route>
             <Route path="/addproperty">
