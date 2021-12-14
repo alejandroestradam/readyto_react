@@ -1,0 +1,95 @@
+.subtitle {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-left: 30px;
+  border-top: 0.5px solid gray;
+}
+
+.beds {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-left: 30px;
+  border-top: 0.5px solid gray;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.description {
+  margin: 0;
+  margin-left: 30px;
+  width: 600px;
+  border-top: 0.5px solid gray;
+  padding-top: 20px;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+.star {
+  display: flex;
+  align-items: center;
+}
+.star img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.reserve-btn {
+  background-color: #01a6e6;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.reserve-btn:hover {
+  cursor: pointer;
+  background-color: #3c99dc;
+}
+.warning {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.modal-calendar {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  right: 500px;
+  bottom: 40px;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}

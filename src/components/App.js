@@ -5,29 +5,34 @@ import Home from './Home/Home';
 import Login from './Login';
 import Navbar from './Navbar';
 import Properties from './Properties/Properties';
-import Property from './Property';
 import Signin from './Signin';
 
 const App = () => {
-  const [isLoggedIn, setisLoggedIn] = React.useState(false);
+  const [isLoggedIn, setisLoggedIn] = React.useState({
+    status: false,
+    name: '',
+    token: ''
+});
+const [selectedProperty, setselectedProperty] = React.useState({
+
+});
 
   const callbackFunction = (childData) => {
-    console.log('data: ', childData);
     setisLoggedIn(childData);
+  }
+  const callback = (Data) => {
+    setselectedProperty(Data);
   }
 
   return (
     <Router>
       <Navbar isLoggedIn={isLoggedIn}/>
           <Switch>
-            <Route path ="/properties/property">
-              <Property />
-            </Route>
             <Route path="/addproperty">
               <AddProperty />
             </Route>
             <Route path ="/properties">
-              <Properties />
+              <Properties parentCallback={callback} isLoggedIn={isLoggedIn}/>
             </Route>
             <Route path ="/login">
               <Login parentCallback={callbackFunction}/>

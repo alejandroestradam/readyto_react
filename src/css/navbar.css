@@ -100,3 +100,7 @@
 .links:hover {
   color: #d3d3d3;
 }
+.modal {
+  background-color: white;
+  opacity: 1;
+}

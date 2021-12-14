@@ -33,6 +33,9 @@
   font-weight: 700;
   font-size: 15px;
 }
+.register button:hover {
+  cursor: pointer;
+}
 .terms {
   border-top: 0.5px solid #b0b0b0;
   border-bottom: 0.5px solid #b0b0b0;

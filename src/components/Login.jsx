@@ -2,23 +2,14 @@ import React from 'react';
 import '../css/login.css';
 import axios from 'axios';
 import GoogleLogin from 'react-google-login';
+import { useHistory } from "react-router-dom";
 
 const Login = (props) => {
-
-
-    const responseGoogle = (response) => {
-        if (response){
-        setisLoggedIn({
-            status: true,
-            name: response.Au.VX
-        });
-    }
-        props.parentCallback(isLoggedIn);
-    }
+    let history = useHistory();
 
     const [Values, setValues] = React.useState({
-            email:'',
-            password:''
+        email:'',
+        password:''
     });
     const [loginValues, setloginValues] = React.useState({
         name: '',
@@ -27,8 +18,24 @@ const Login = (props) => {
     })
     const [isLoggedIn, setisLoggedIn] = React.useState({
         status: false,
-        name: ''
+        name: '',
+        token: ''
     });
+
+    const responseGoogle = (response) => {
+        if (response){
+        setisLoggedIn({
+            status: true,
+            name: response.Au.VX,
+            token: 'fisdnsfkdkjgsjien134234nkkall1234'
+        });
+        history.goBack();
+    }
+    }
+
+    React.useEffect( () => {
+        props.parentCallback(isLoggedIn);
+    },[isLoggedIn, props])
 
     const handleChange = (event) => {
         setValues({
@@ -43,10 +50,14 @@ const Login = (props) => {
         if(results.length > 0){
             setisLoggedIn({
                 status: true,
-                name: results[0].name
+                name: results[0].name,
+                token: 'fisdnsfkdkjgsjien134234nkkall1234'
             });
             props.parentCallback(isLoggedIn);
+        }else{
+            alert('Incorrect user or password');
         }
+        history.push('/');
     }
 
     React.useEffect(() => {

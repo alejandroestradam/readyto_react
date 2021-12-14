@@ -1,6 +1,8 @@
 { "properties": [
     {
             "listing_url": "https://www.airbnb.com/rooms/10038496",
+            "id": "123456",
+            "calification": 4.5,
             "name": "Copacabana Apartment Posto 6",
             "summary": "The Apartment has a living room, toilet, bedroom (suite) and American kitchen. Well located, on the Copacabana beach block a 05 Min. walk from Ipanema beach (Arpoador). Internet wifi, cable tv, air conditioning in the bedroom, ceiling fans in the bedroom and living room, kitchen with microwave, cooker, Blender, dishes, cutlery and service area with fridge, washing machine, clothesline for drying clothes and closet with several utensils for use.  The property boasts 45 m2.",
             "space": "The apartment has a living room, wash room, suite and an American kitchen. The bedroom has a double bed and there's a bunk bed in the living room. It is very well located, in the Copacabana beach block and just a few blocks from Arpoador and Ipanema. You can walk to any of those beaches. It has internet wifi, tv, air conditioning in the bedroom, ceiling fans in the living room and the bedroom and an equipped kitchen with cooker, fridge, washing machine, microwave and utensils. Ease of public transportation, banks, markets and restaurants.",
@@ -61,6 +63,8 @@
     },
     {
     "listing_url": "https://www.airbnb.com/rooms/10047964",
+    "id": "654321",
+    "calification": 4.6,
     "name": "Charming Flat in Downtown Moda",
     "summary": "Fully furnished 3+1 flat decorated with vintage style.  Located at the heart of Moda/Kadıköy, close to seaside and also to the public transportation (tram, metro, ferry, bus stations) 10 minutes walk.",
     "space": "The apartment is composed of 1 big bedroom with double sized bed, a guest room with double sofa bed , a living room with 2 double sofa bed. It's suitable for max 6  people. Every bedroom has balcony overlooking the calm streets of Moda, where you will find relax and intimacy , even if at one step from the most vivid Moda's living streets. There's also private parking area with remote controller. The apartment is away from the traffic and the most crowded places, good for the ensuring quiet and a peaceful rest. The apartment is fully available to guests and is equipped with heating in all bedrooms. In the living room there is a HD TV and Apple TV. In the kitchen, there are dishwasher, oven and washing machine, with the respective detergents. You will find fresh water in the fridge and on the kitchen there are a toaster, kettle, coffee maker. In the bathroom you will find hand soap, shampoo and a hair dryer. For those who wish, there will be biscuits, tea and coffee for breakfast; oil, v",
@@ -119,6 +123,8 @@
     {
 
     "listing_url": "https://www.airbnb.com/rooms/10030955",
+    "id": "234567",
+    "calification": 4.9,
     "name": "Apt Linda Vista Lagoa - Rio",
     "summary": "Quarto com vista para a Lagoa Rodrigo de Freitas, cartão postal do Rio de Janeiro. Linda Vista.  1 Quarto e 1 banheiro  Amplo, arejado, vaga na garagem. Prédio com piscina, sauna e playground.  Fácil acesso, próximo da praia e shoppings.",
     "space": "",
@@ -174,6 +180,8 @@
     {
 
     "listing_url": "https://www.airbnb.com/rooms/10069642",
+    "id": "928374",
+    "calification": 4.4,
     "name": "Ótimo Apto proximo Parque Olimpico",
     "summary": "Apartamento próximo ao centro dos Jogos Olímpicos 2016 a 6 Km do Parque Olímpico e próximo a praia. Infraestrutura total de transporte além de shoppings e comércio. Área nobre do Rio de Janeiro.",
     "space": "",
@@ -227,6 +235,8 @@
     }
     },
     {
+        "id": "024738",
+        "calification": 3.9,
         "name": "THE Place to See Sydney's FIREWORKS",
         "summary": "The ultimate way to experience Sydney Harbour; fireworks, the bridge, and the proximity to the city means you can experience everything this city has to offer.  Tucked into the Balmain Peninsula, you're close to parks, pubs, shops, buses, and more!",
         "space": "An entertainer's retreat!!  Views of the Sydney Harbour are unparalleled, the house is spacious and modern, the neighbourhood is friendly.  Your bedroom opens out onto a grassy backyard with views of the city and features your own en suite bathroom with shower.",
@@ -268,6 +278,8 @@
         }
     },
     {
+        "id": "123789",
+        "calification": 4.2,
         "name": "The LES Apartment",
         "summary": "Dear guests, Would you just like to live in the heart of the city that you would be eligible to go anywhere? If yes, you found the right place!",
         "space": "It is a 1 bedroom apartment that can hold 3 people easily. The living room is spacious and there are enough places to seat groups. The apartment is facing the street, so, the house is not blocked by other buildings and the sun enters the living room.",
@@ -309,6 +321,8 @@
         }
     },
     {
+        "id": "238456",
+        "calification": 4.3,
         "name": "3 chambres au coeur du Plateau",
         "summary": "Notre appartement comporte 3 chambres avec chacune un lit queen. Nous avons également un salon, une salle de bain avec baignoire, et une cuisine toute équipée, avec laveuse et sécheuse.",
         "space": "Notre logement est lumineux, plein de vie et chaleureux! Vous disposerez de l'appartement entier avec 3 chambres fermées, chacune avec 1 lit queen size.",
@@ -350,6 +364,8 @@
         }
     },
     {
+        "id": "123667",
+        "calification": 4.8,
         "name": "Be Happy in Porto",
         "summary": "Be Happy Apartment is an amazing space. Renovated and comfortable apartment, located in a building dating from the nineteenth century in one of the most emblematic streets of the Porto city \"Rua do Almada\".  Be Happy Apartment is located in the city center, able you to visit the historic center only by foot, being very close of majority points of interesting of the Porto City. Be Happy Apartment is located close of central Station MetroTrindade.",
         "space": "Be Happy Apartment is housed in a typical Porto building, where the apartment was completely remodeled, with a beautiful decoration,with great style and extremelly confortable. Fully equipped kitchen, microwave, ceramic hob and fridge. The bathroom is excelent for a relax time. In surroundings of Be Happy Apartment  there is supermarket, coffee shops, bakeries, restaurants, bars and clubs.",
@@ -397,6 +413,8 @@
         }
     },
     {
+        "id": "238291",
+        "calification": 4.6,
         "name": "Horto flat with small garden",
         "summary": "One bedroom + sofa-bed in quiet and bucolic neighbourhood right next to the Botanical Garden. Small garden, outside shower, well equipped kitchen and bathroom with shower and tub. Easy for transport with many restaurants and basic facilities in the area.",
         "space": "Lovely one bedroom + sofa-bed in the living room, perfect for two but fits up to four comfortably.  There´s a small outside garden with a shower There´s a well equipped open kitchen with both 110V / 220V wall plugs and one bathroom with shower, tub and even a sauna machine! All newly refurbished!",
@@ -438,6 +456,8 @@
         }
     },
     {
+        "id": "109469",
+        "calification": 4.4,
         "name": "Catete's Colonial Big Hause Room B",
         "summary": "Old floor, intirely reformed, destined to receive people in a very harmonious and welcoming place. Located at Catete's neighborhood, with a very easy access to the metro station, a lot of bus lines, next to a excellent trade and things to do around.",
         "space": "Este quarto está preparado para acomodar confortavelmente quatro pessoas, podendo ainda ser acrescentado um sofá-cama para receber mais um hóspede.",
@@ -485,6 +505,8 @@
         }
     },
     {
+        "id": "102938",
+        "calification": 4.3,
         "name": "New York City - Upper West Side Apt",
         "summary": "",
         "space": "Murphy bed, optional second bedroom available. Wifi available, Hulu, Netflix, TV Eat-in kitchen. Bathroom with great shower/bath.  Washer/dryer in basement.",
@@ -532,6 +554,8 @@
         }
     },
     {
+        "id": "456789",
+        "calification": 4.4,
         "name": "Soho Cozy, Spacious and Convenient",
         "summary": "Clean, fully furnish, Spacious 1 bedroom flat just off the escalator in Mid Levels. 2 minutes From Soho Bar and Restaurants. Located in a quiet alley 1 minute from Sun Yat Sen",
         "space": "",
