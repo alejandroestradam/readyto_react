@@ -22,7 +22,6 @@ const Property = (props) => {
         setValue(value);
         setreserveValues(props.selectedProperty);
         alert(props.selectedProperty.name + ' reserved on ' + value[0] + '--' + value[1]);
-        console.log(reserveValues);
         history.push('/');
     }
 
